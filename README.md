@@ -5,4 +5,4 @@
 # Things I have added/implemented to the task of generating a password :
 
 - Added an another variable as a length which allows this particular value to hold different types of data that is stored inside this variable 
-- image.png
+- Added an alert to send a message to the user that the password needs to be between 8 to 128 characters and if it's over or less than the number suggested, you won't be able to generate the password.
