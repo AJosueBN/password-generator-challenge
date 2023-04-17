@@ -4,4 +4,5 @@
 
 # Things I have added/implemented to the task of generating a password :
 
-- 
+- Added an another variable as a length which allows this particular value to hold different types of data that is stored inside this variable 
+- image.png
