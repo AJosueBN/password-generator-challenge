@@ -22,13 +22,13 @@ if (confirm("Would you like uppercase characters within your password?")) {
 optionalPasscode = optionalPasscode.concat(uppercaseChars);
 }
 if (confirm("Would you like lowercase characters within your password?")) {
-lowercaseChars = 
+optionalPasscode = optionalPasscode.concat(lowercaseChars);
 }
 if (confirm("Would you like special characters within your password?")) {
-specialChars = 
+optionalPasscode = optionalPasscode.concat(specialChars);
 }
 if (confirm("Would you like numbered characters within your password?")) {
-integerChars = 
+optionalPasscode = optionalPasscode.concat(integerChars);
 }
 
 
