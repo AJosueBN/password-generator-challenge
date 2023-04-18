@@ -30,15 +30,14 @@ optionalPasscode = optionalPasscode.concat(specialChars);
 if (confirm("Would you like numbered characters within your password?")) {
 optionalPasscode = optionalPasscode.concat(integerChars);
 }
-
-
+return true
 
 
 }
 
 for (var i = 0; i < length; i++) {
-  var randomNumber = Math.floor(Math.random())
-
+var chosenNumber = Math.floor(Math.random() * optionalPasscode.length )
+var generatedPassword
 
 }
 
