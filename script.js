@@ -34,7 +34,7 @@ optionalPasscode = optionalPasscode.concat(specialChars);
 if (confirm("Would you like numbered characters within your password?")) {
 optionalPasscode = optionalPasscode.concat(integerChars);
 }
-
+// This part allows the code to allocate/generate random letters or numbers
 for (var i = 0; i < length; i++)  {
   var chosenNumber = Math.floor(Math.random() * optionalPasscode.length );
   var randomPassword = ' ';
@@ -42,9 +42,10 @@ for (var i = 0; i < length; i++)  {
   }
   return randomPassword;
   }
+  
 
 
-// This part allows the code to allocate/generate random letters or numbers
+
 
 
 
