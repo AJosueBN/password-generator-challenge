@@ -1,9 +1,9 @@
 // Set these variables on a global scope rather than locally
-var optionalPasscode = ' '
-var uppercaseChars = ['A','B','C','D','E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X','Y','Z' ];
-var lowercaseChars = ['a','b','c','d','e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x','y','z' ];
-var specialChars = ['!','£','$','%','^','&','*','(' , ')' ,'_' ,'+' ,'|' ,'{' , '}',':','~','<', '>','|'];
-var integerChars = ['0','1','2','3','4','5','6','7','8','9'];
+var optionalPasscode = ''
+var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowercaseChars = "abcdefghijklmnopqrstuvwxyz"
+var specialChars =  "!£$%^&*()_~<>:|[]";
+var integerChars = "0123456789";
 
 
 // Assignment Code
@@ -34,19 +34,16 @@ optionalPasscode = optionalPasscode.concat(specialChars);
 if (confirm("Would you like numbered characters within your password?")) {
 optionalPasscode = optionalPasscode.concat(integerChars);
 }
+
+var randomPassword = ''
 // This part allows the code to allocate/generate random letters or numbers
 for (var i = 0; i < length; i++)  {
   var chosenNumber = Math.floor(Math.random() * optionalPasscode.length );
-  var randomPassword = ' ';
+  
   randomPassword = randomPassword + optionalPasscode[chosenNumber];
   }
   return randomPassword;
   }
-  
-
-
-
-
 
 
 
