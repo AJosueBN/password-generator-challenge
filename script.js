@@ -1,9 +1,9 @@
 // Set these variables on a global scope rather than locally
 var optionalPasscode = ''
-var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var lowercaseChars = "abcdefghijklmnopqrstuvwxyz"
-var specialChars =  "!£$%^&*()_~<>:|[]";
-var integerChars = "0123456789";
+var specialChars =  "!£$%^&*()_~<>:|[]"
+var integerChars = "0123456789"
 
 
 // Assignment Code
