@@ -18,10 +18,11 @@ function generatePassword() {
 var length = prompt("How much length do you want your password to be?  Note:Between 8-128 characters")
 console.log(length)
 if(length < 8 || length > 128 || isNaN(length)) {
-alert("Password NEEDS to be between 8 to 128 characters")
-return false
+alert("Password NEEDS to be between 8 to 128 characters - Please use NUMBERED digits")
+return ''
 }
 
+optionalPasscode = ''
 if (confirm("Would you like uppercase characters within your password?")) {
 optionalPasscode = optionalPasscode.concat(uppercaseChars);
 }
@@ -33,10 +34,15 @@ optionalPasscode = optionalPasscode.concat(specialChars);
 }
 if (confirm("Would you like numbered characters within your password?")) {
 optionalPasscode = optionalPasscode.concat(integerChars);
-}
+} 
+
+
+
 
 var randomPassword = ''
+
 // This part allows the code to allocate/generate random letters or numbers
+
 for (var i = 0; i < length; i++)  {
   var chosenNumber = Math.floor(Math.random() * optionalPasscode.length );
   
@@ -52,8 +58,9 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
 
+  passwordText.value = password;
+  
 }
 
 // Add event listener to generate button
