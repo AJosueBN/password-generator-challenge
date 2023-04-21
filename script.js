@@ -18,7 +18,7 @@ function generatePassword() {
 var length = prompt("How much length do you want your password to be?  Note:Between 8-128 characters")
 console.log(length)
 if(length < 8 || length > 128 || isNaN(length)) {
-alert("Password NEEDS to be between 8 to 128 characters - Please type in a NUMBERED digit")
+alert("Password NEEDS to be between 8 to 128 characters - Please type in a NUMBERED digit and after this criteria pick at least ONE character type")
 return ''
 }
 
@@ -34,8 +34,8 @@ optionalPasscode = optionalPasscode.concat(specialChars);
 }
 if (confirm("Would you like numbered characters within your password?")) {
 optionalPasscode = optionalPasscode.concat(integerChars);
-} else return ''
-
+} 
+else return ''
 
 
 
