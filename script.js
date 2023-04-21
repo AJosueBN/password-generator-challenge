@@ -34,7 +34,7 @@ optionalPasscode = optionalPasscode.concat(specialChars);
 }
 if (confirm("Would you like numbered characters within your password?")) {
 optionalPasscode = optionalPasscode.concat(integerChars);
-} 
+} else return ''
 
 
 
