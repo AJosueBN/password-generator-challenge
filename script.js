@@ -15,7 +15,7 @@ function generatePassword() {
 
 
 // Prompt Area to let user know the criteria they can choose to generate their own password(This comes before password gets generated)
-var length = prompt("How much length do you want your password to be?  Note:Between 8-128 characters and choose at least one character type")
+var length = prompt("How much length do you want your password to be?  Note:Between 8-128 characters and within the next criteria choose at least ONE character type")
 console.log(length)
 if(length < 8 || length > 128 || isNaN(length)) {
 alert("Password NEEDS to be between 8 to 128 characters - Please type in a NUMBERED digit")
